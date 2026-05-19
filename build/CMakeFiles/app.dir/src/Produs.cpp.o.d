@@ -1,7 +1,7 @@
-CMakeFiles/app.dir/src/Product.cpp.o: \
- /home/user/projects/warehouse_monitor/src/Product.cpp \
+CMakeFiles/app.dir/src/Produs.cpp.o: \
+ /home/user/projects/warehouse_monitor/src/Produs.cpp \
  /usr/include/stdc-predef.h \
- /home/user/projects/warehouse_monitor/src/../include/Product.h \
+ /home/user/projects/warehouse_monitor/src/../include/Produs.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

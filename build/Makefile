@@ -129,77 +129,77 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
-src/Product.o: src/Product.cpp.o
-.PHONY : src/Product.o
+src/Depozit.o: src/Depozit.cpp.o
+.PHONY : src/Depozit.o
 
 # target to build an object file
-src/Product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Product.cpp.o
-.PHONY : src/Product.cpp.o
+src/Depozit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.o
+.PHONY : src/Depozit.cpp.o
 
-src/Product.i: src/Product.cpp.i
-.PHONY : src/Product.i
+src/Depozit.i: src/Depozit.cpp.i
+.PHONY : src/Depozit.i
 
 # target to preprocess a source file
-src/Product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Product.cpp.i
-.PHONY : src/Product.cpp.i
+src/Depozit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.i
+.PHONY : src/Depozit.cpp.i
 
-src/Product.s: src/Product.cpp.s
-.PHONY : src/Product.s
+src/Depozit.s: src/Depozit.cpp.s
+.PHONY : src/Depozit.s
 
 # target to generate assembly for a file
-src/Product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Product.cpp.s
-.PHONY : src/Product.cpp.s
+src/Depozit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.s
+.PHONY : src/Depozit.cpp.s
 
-src/Supplier.o: src/Supplier.cpp.o
-.PHONY : src/Supplier.o
+src/Furnizor.o: src/Furnizor.cpp.o
+.PHONY : src/Furnizor.o
 
 # target to build an object file
-src/Supplier.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Supplier.cpp.o
-.PHONY : src/Supplier.cpp.o
+src/Furnizor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.o
+.PHONY : src/Furnizor.cpp.o
 
-src/Supplier.i: src/Supplier.cpp.i
-.PHONY : src/Supplier.i
+src/Furnizor.i: src/Furnizor.cpp.i
+.PHONY : src/Furnizor.i
 
 # target to preprocess a source file
-src/Supplier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Supplier.cpp.i
-.PHONY : src/Supplier.cpp.i
+src/Furnizor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.i
+.PHONY : src/Furnizor.cpp.i
 
-src/Supplier.s: src/Supplier.cpp.s
-.PHONY : src/Supplier.s
+src/Furnizor.s: src/Furnizor.cpp.s
+.PHONY : src/Furnizor.s
 
 # target to generate assembly for a file
-src/Supplier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Supplier.cpp.s
-.PHONY : src/Supplier.cpp.s
+src/Furnizor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.s
+.PHONY : src/Furnizor.cpp.s
 
-src/Warehouse.o: src/Warehouse.cpp.o
-.PHONY : src/Warehouse.o
+src/Produs.o: src/Produs.cpp.o
+.PHONY : src/Produs.o
 
 # target to build an object file
-src/Warehouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Warehouse.cpp.o
-.PHONY : src/Warehouse.cpp.o
+src/Produs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.o
+.PHONY : src/Produs.cpp.o
 
-src/Warehouse.i: src/Warehouse.cpp.i
-.PHONY : src/Warehouse.i
+src/Produs.i: src/Produs.cpp.i
+.PHONY : src/Produs.i
 
 # target to preprocess a source file
-src/Warehouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Warehouse.cpp.i
-.PHONY : src/Warehouse.cpp.i
+src/Produs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.i
+.PHONY : src/Produs.cpp.i
 
-src/Warehouse.s: src/Warehouse.cpp.s
-.PHONY : src/Warehouse.s
+src/Produs.s: src/Produs.cpp.s
+.PHONY : src/Produs.s
 
 # target to generate assembly for a file
-src/Warehouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Warehouse.cpp.s
-.PHONY : src/Warehouse.cpp.s
+src/Produs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.s
+.PHONY : src/Produs.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -234,15 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
-	@echo "... src/Product.o"
-	@echo "... src/Product.i"
-	@echo "... src/Product.s"
-	@echo "... src/Supplier.o"
-	@echo "... src/Supplier.i"
-	@echo "... src/Supplier.s"
-	@echo "... src/Warehouse.o"
-	@echo "... src/Warehouse.i"
-	@echo "... src/Warehouse.s"
+	@echo "... src/Depozit.o"
+	@echo "... src/Depozit.i"
+	@echo "... src/Depozit.s"
+	@echo "... src/Furnizor.o"
+	@echo "... src/Furnizor.i"
+	@echo "... src/Furnizor.s"
+	@echo "... src/Produs.o"
+	@echo "... src/Produs.i"
+	@echo "... src/Produs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

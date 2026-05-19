@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/projects/warehouse_monitor/src/Product.cpp" "CMakeFiles/app.dir/src/Product.cpp.o" "gcc" "CMakeFiles/app.dir/src/Product.cpp.o.d"
-  "/home/user/projects/warehouse_monitor/src/Supplier.cpp" "CMakeFiles/app.dir/src/Supplier.cpp.o" "gcc" "CMakeFiles/app.dir/src/Supplier.cpp.o.d"
-  "/home/user/projects/warehouse_monitor/src/Warehouse.cpp" "CMakeFiles/app.dir/src/Warehouse.cpp.o" "gcc" "CMakeFiles/app.dir/src/Warehouse.cpp.o.d"
+  "/home/user/projects/warehouse_monitor/src/Depozit.cpp" "CMakeFiles/app.dir/src/Depozit.cpp.o" "gcc" "CMakeFiles/app.dir/src/Depozit.cpp.o.d"
+  "/home/user/projects/warehouse_monitor/src/Furnizor.cpp" "CMakeFiles/app.dir/src/Furnizor.cpp.o" "gcc" "CMakeFiles/app.dir/src/Furnizor.cpp.o.d"
+  "/home/user/projects/warehouse_monitor/src/Produs.cpp" "CMakeFiles/app.dir/src/Produs.cpp.o" "gcc" "CMakeFiles/app.dir/src/Produs.cpp.o.d"
   "/home/user/projects/warehouse_monitor/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
   )
 

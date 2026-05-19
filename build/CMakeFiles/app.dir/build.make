@@ -83,62 +83,62 @@ CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
-CMakeFiles/app.dir/src/Product.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/Product.cpp.o: /home/user/projects/warehouse_monitor/src/Product.cpp
-CMakeFiles/app.dir/src/Product.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/Product.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Product.cpp.o -MF CMakeFiles/app.dir/src/Product.cpp.o.d -o CMakeFiles/app.dir/src/Product.cpp.o -c /home/user/projects/warehouse_monitor/src/Product.cpp
+CMakeFiles/app.dir/src/Produs.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/Produs.cpp.o: /home/user/projects/warehouse_monitor/src/Produs.cpp
+CMakeFiles/app.dir/src/Produs.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/Produs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Produs.cpp.o -MF CMakeFiles/app.dir/src/Produs.cpp.o.d -o CMakeFiles/app.dir/src/Produs.cpp.o -c /home/user/projects/warehouse_monitor/src/Produs.cpp
 
-CMakeFiles/app.dir/src/Product.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Product.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Product.cpp > CMakeFiles/app.dir/src/Product.cpp.i
+CMakeFiles/app.dir/src/Produs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Produs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Produs.cpp > CMakeFiles/app.dir/src/Produs.cpp.i
 
-CMakeFiles/app.dir/src/Product.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Product.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Product.cpp -o CMakeFiles/app.dir/src/Product.cpp.s
+CMakeFiles/app.dir/src/Produs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Produs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Produs.cpp -o CMakeFiles/app.dir/src/Produs.cpp.s
 
-CMakeFiles/app.dir/src/Warehouse.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/Warehouse.cpp.o: /home/user/projects/warehouse_monitor/src/Warehouse.cpp
-CMakeFiles/app.dir/src/Warehouse.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/Warehouse.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Warehouse.cpp.o -MF CMakeFiles/app.dir/src/Warehouse.cpp.o.d -o CMakeFiles/app.dir/src/Warehouse.cpp.o -c /home/user/projects/warehouse_monitor/src/Warehouse.cpp
+CMakeFiles/app.dir/src/Depozit.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/Depozit.cpp.o: /home/user/projects/warehouse_monitor/src/Depozit.cpp
+CMakeFiles/app.dir/src/Depozit.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/Depozit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Depozit.cpp.o -MF CMakeFiles/app.dir/src/Depozit.cpp.o.d -o CMakeFiles/app.dir/src/Depozit.cpp.o -c /home/user/projects/warehouse_monitor/src/Depozit.cpp
 
-CMakeFiles/app.dir/src/Warehouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Warehouse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Warehouse.cpp > CMakeFiles/app.dir/src/Warehouse.cpp.i
+CMakeFiles/app.dir/src/Depozit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Depozit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Depozit.cpp > CMakeFiles/app.dir/src/Depozit.cpp.i
 
-CMakeFiles/app.dir/src/Warehouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Warehouse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Warehouse.cpp -o CMakeFiles/app.dir/src/Warehouse.cpp.s
+CMakeFiles/app.dir/src/Depozit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Depozit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Depozit.cpp -o CMakeFiles/app.dir/src/Depozit.cpp.s
 
-CMakeFiles/app.dir/src/Supplier.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/Supplier.cpp.o: /home/user/projects/warehouse_monitor/src/Supplier.cpp
-CMakeFiles/app.dir/src/Supplier.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/Supplier.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Supplier.cpp.o -MF CMakeFiles/app.dir/src/Supplier.cpp.o.d -o CMakeFiles/app.dir/src/Supplier.cpp.o -c /home/user/projects/warehouse_monitor/src/Supplier.cpp
+CMakeFiles/app.dir/src/Furnizor.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/Furnizor.cpp.o: /home/user/projects/warehouse_monitor/src/Furnizor.cpp
+CMakeFiles/app.dir/src/Furnizor.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/src/Furnizor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/Furnizor.cpp.o -MF CMakeFiles/app.dir/src/Furnizor.cpp.o.d -o CMakeFiles/app.dir/src/Furnizor.cpp.o -c /home/user/projects/warehouse_monitor/src/Furnizor.cpp
 
-CMakeFiles/app.dir/src/Supplier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Supplier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Supplier.cpp > CMakeFiles/app.dir/src/Supplier.cpp.i
+CMakeFiles/app.dir/src/Furnizor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Furnizor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/projects/warehouse_monitor/src/Furnizor.cpp > CMakeFiles/app.dir/src/Furnizor.cpp.i
 
-CMakeFiles/app.dir/src/Supplier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Supplier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Supplier.cpp -o CMakeFiles/app.dir/src/Supplier.cpp.s
+CMakeFiles/app.dir/src/Furnizor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Furnizor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/projects/warehouse_monitor/src/Furnizor.cpp -o CMakeFiles/app.dir/src/Furnizor.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/src/main.cpp.o" \
-"CMakeFiles/app.dir/src/Product.cpp.o" \
-"CMakeFiles/app.dir/src/Warehouse.cpp.o" \
-"CMakeFiles/app.dir/src/Supplier.cpp.o"
+"CMakeFiles/app.dir/src/Produs.cpp.o" \
+"CMakeFiles/app.dir/src/Depozit.cpp.o" \
+"CMakeFiles/app.dir/src/Furnizor.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/src/main.cpp.o
-app: CMakeFiles/app.dir/src/Product.cpp.o
-app: CMakeFiles/app.dir/src/Warehouse.cpp.o
-app: CMakeFiles/app.dir/src/Supplier.cpp.o
+app: CMakeFiles/app.dir/src/Produs.cpp.o
+app: CMakeFiles/app.dir/src/Depozit.cpp.o
+app: CMakeFiles/app.dir/src/Furnizor.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"
