@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/depozit.dir/src/main.cpp.o CMakeFiles/depozit.dir/src/Produs.cpp.o CMakeFiles/depozit.dir/src/Depozit.cpp.o -o depozit 

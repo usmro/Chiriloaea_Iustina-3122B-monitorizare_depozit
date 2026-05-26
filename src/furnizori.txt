@@ -1,0 +1,4 @@
+1,TechSupply SA,0740123456,office@techsupply.ro
+2,ElectroDistrib,0722111222,contact@electro.ro
+3,IT Warehouse,0733444555,sales@itwarehouse.ro
+4,Digital Systems,0766777888,support@digital.ro

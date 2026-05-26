@@ -117,24 +117,38 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named depozit
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
+depozit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 depozit
+.PHONY : depozit
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
+depozit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/build
+.PHONY : depozit/fast
+
+#=============================================================================
+# Target rules for targets named teste
+
+# Build rule for target.
+teste: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 teste
+.PHONY : teste
+
+# fast build rule for target.
+teste/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/build
+.PHONY : teste/fast
 
 src/Depozit.o: src/Depozit.cpp.o
 .PHONY : src/Depozit.o
 
 # target to build an object file
 src/Depozit.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Depozit.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Depozit.cpp.o
 .PHONY : src/Depozit.cpp.o
 
 src/Depozit.i: src/Depozit.cpp.i
@@ -142,7 +156,8 @@ src/Depozit.i: src/Depozit.cpp.i
 
 # target to preprocess a source file
 src/Depozit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Depozit.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Depozit.cpp.i
 .PHONY : src/Depozit.cpp.i
 
 src/Depozit.s: src/Depozit.cpp.s
@@ -150,39 +165,17 @@ src/Depozit.s: src/Depozit.cpp.s
 
 # target to generate assembly for a file
 src/Depozit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Depozit.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Depozit.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Depozit.cpp.s
 .PHONY : src/Depozit.cpp.s
-
-src/Furnizor.o: src/Furnizor.cpp.o
-.PHONY : src/Furnizor.o
-
-# target to build an object file
-src/Furnizor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.o
-.PHONY : src/Furnizor.cpp.o
-
-src/Furnizor.i: src/Furnizor.cpp.i
-.PHONY : src/Furnizor.i
-
-# target to preprocess a source file
-src/Furnizor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.i
-.PHONY : src/Furnizor.cpp.i
-
-src/Furnizor.s: src/Furnizor.cpp.s
-.PHONY : src/Furnizor.s
-
-# target to generate assembly for a file
-src/Furnizor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Furnizor.cpp.s
-.PHONY : src/Furnizor.cpp.s
 
 src/Produs.o: src/Produs.cpp.o
 .PHONY : src/Produs.o
 
 # target to build an object file
 src/Produs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Produs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Produs.cpp.o
 .PHONY : src/Produs.cpp.o
 
 src/Produs.i: src/Produs.cpp.i
@@ -190,7 +183,8 @@ src/Produs.i: src/Produs.cpp.i
 
 # target to preprocess a source file
 src/Produs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Produs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Produs.cpp.i
 .PHONY : src/Produs.cpp.i
 
 src/Produs.s: src/Produs.cpp.s
@@ -198,7 +192,8 @@ src/Produs.s: src/Produs.cpp.s
 
 # target to generate assembly for a file
 src/Produs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Produs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/Produs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/src/Produs.cpp.s
 .PHONY : src/Produs.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -206,7 +201,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -214,7 +209,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -222,8 +217,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/test_depozit.o: tests/test_depozit.cpp.o
+.PHONY : tests/test_depozit.o
+
+# target to build an object file
+tests/test_depozit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/tests/test_depozit.cpp.o
+.PHONY : tests/test_depozit.cpp.o
+
+tests/test_depozit.i: tests/test_depozit.cpp.i
+.PHONY : tests/test_depozit.i
+
+# target to preprocess a source file
+tests/test_depozit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/tests/test_depozit.cpp.i
+.PHONY : tests/test_depozit.cpp.i
+
+tests/test_depozit.s: tests/test_depozit.cpp.s
+.PHONY : tests/test_depozit.s
+
+# target to generate assembly for a file
+tests/test_depozit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/tests/test_depozit.cpp.s
+.PHONY : tests/test_depozit.cpp.s
 
 # Help Target
 help:
@@ -233,19 +252,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... app"
+	@echo "... depozit"
+	@echo "... teste"
 	@echo "... src/Depozit.o"
 	@echo "... src/Depozit.i"
 	@echo "... src/Depozit.s"
-	@echo "... src/Furnizor.o"
-	@echo "... src/Furnizor.i"
-	@echo "... src/Furnizor.s"
 	@echo "... src/Produs.o"
 	@echo "... src/Produs.i"
 	@echo "... src/Produs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test_depozit.o"
+	@echo "... tests/test_depozit.i"
+	@echo "... tests/test_depozit.s"
 .PHONY : help
 
 

@@ -1,3 +1,4 @@
-/home/user/projects/warehouse_monitor/build/CMakeFiles/app.dir
+/home/user/projects/warehouse_monitor/build/CMakeFiles/depozit.dir
+/home/user/projects/warehouse_monitor/build/CMakeFiles/teste.dir
 /home/user/projects/warehouse_monitor/build/CMakeFiles/edit_cache.dir
 /home/user/projects/warehouse_monitor/build/CMakeFiles/rebuild_cache.dir

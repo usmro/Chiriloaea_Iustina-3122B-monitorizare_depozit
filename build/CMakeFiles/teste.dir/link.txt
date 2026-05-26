@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/teste.dir/tests/test_depozit.cpp.o CMakeFiles/teste.dir/src/Produs.cpp.o CMakeFiles/teste.dir/src/Depozit.cpp.o -o teste 

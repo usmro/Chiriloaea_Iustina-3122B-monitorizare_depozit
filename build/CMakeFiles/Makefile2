@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/user/projects/warehouse_monitor/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/app.dir/all
+all: CMakeFiles/depozit.dir/all
+all: CMakeFiles/teste.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/app.dir/clean
+clean: CMakeFiles/depozit.dir/clean
+clean: CMakeFiles/teste.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/app.dir
+# Target rules for target CMakeFiles/depozit.dir
 
 # All Build rule for target.
-CMakeFiles/app.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target app"
-.PHONY : CMakeFiles/app.dir/all
+CMakeFiles/depozit.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=1,2,3,4 "Built target depozit"
+.PHONY : CMakeFiles/depozit.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/projects/warehouse_monitor/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/app.dir/all
+CMakeFiles/depozit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/projects/warehouse_monitor/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/depozit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/projects/warehouse_monitor/build/CMakeFiles 0
-.PHONY : CMakeFiles/app.dir/rule
+.PHONY : CMakeFiles/depozit.dir/rule
 
 # Convenience name for target.
-app: CMakeFiles/app.dir/rule
-.PHONY : app
+depozit: CMakeFiles/depozit.dir/rule
+.PHONY : depozit
 
 # clean rule for target.
-CMakeFiles/app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/clean
-.PHONY : CMakeFiles/app.dir/clean
+CMakeFiles/depozit.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/depozit.dir/build.make CMakeFiles/depozit.dir/clean
+.PHONY : CMakeFiles/depozit.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/teste.dir
+
+# All Build rule for target.
+CMakeFiles/teste.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=5,6,7,8 "Built target teste"
+.PHONY : CMakeFiles/teste.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/teste.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/projects/warehouse_monitor/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/teste.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/projects/warehouse_monitor/build/CMakeFiles 0
+.PHONY : CMakeFiles/teste.dir/rule
+
+# Convenience name for target.
+teste: CMakeFiles/teste.dir/rule
+.PHONY : teste
+
+# clean rule for target.
+CMakeFiles/teste.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/clean
+.PHONY : CMakeFiles/teste.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

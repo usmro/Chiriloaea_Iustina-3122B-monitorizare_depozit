@@ -1,0 +1,50 @@
+101,Laptop Dell Inspiron,15,3499.99,5
+102,Mouse Logitech G102,3,89.99,10
+103,Tastatura Mechanical Redragon,8,249.00,5
+104,Monitor Samsung 27,2,1299.00,3
+105,Cablu HDMI 2m,50,19.99,15
+106,USB Hub 4 Porturi,12,59.99,10
+107,SSD Kingston 1TB,4,399.99,5
+108,HDD Seagate 2TB,9,279.99,5
+109,Casti HyperX Cloud,6,349.99,4
+110,Webcam Logitech C920,1,459.99,2
+111,Router TP-Link AX1500,7,299.99,3
+112,Memorie RAM 16GB DDR4,14,219.99,6
+113,Placa Video RTX 4060,2,2499.99,2
+114,Procesor Intel i5 13400F,5,1099.99,3
+115,Sursa Corsair 650W,11,429.99,4
+116,Placa de baza ASUS B760,4,799.99,3
+117,Microfon Blue Yeti,2,599.99,2
+118,Mouse Pad XXL,25,49.99,10
+119,Adaptor USB-C HDMI,13,89.99,5
+120,Switch Gigabit 8 Porturi,6,159.99,3
+121,Laptop HP Pavilion,8,3299.99,4
+122,Monitor LG Ultrawide,1,1799.99,2
+123,SSD Samsung 980 Pro,3,699.99,3
+124,Boxe Logitech Z333,7,299.99,4
+125,Camera Supraveghere IP,5,399.99,3
+126,UPS APC 650VA,2,549.99,2
+127,Imprimanta HP LaserJet,4,899.99,2
+128,Scanner Canon Lide,6,349.99,3
+129,Toner HP 106A,18,199.99,5
+130,Bluetooth Adapter USB,22,39.99,10
+131,MacBook Air M2,2,6499.99,1
+132,iPad Air 5,3,3499.99,2
+133,Apple Magic Mouse,5,499.99,3
+134,Apple Magic Keyboard,4,699.99,2
+135,Telefon Samsung S24,6,4599.99,3
+136,Telefon iPhone 15,4,5999.99,2
+137,Incarcator USB-C 65W,20,129.99,8
+138,Power Bank 20000mAh,10,179.99,5
+139,SSD Extern 2TB,5,549.99,3
+140,Stick USB 128GB,30,69.99,10
+141,Tastatura Logitech MX Keys,3,549.99,2
+142,Mouse Logitech MX Master 3,2,499.99,2
+143,Monitor ASUS TUF Gaming,4,1499.99,2
+144,Casti Sony WH1000XM5,2,1699.99,1
+145,Camera Web Razer Kiyo,5,499.99,2
+146,MicroSD 256GB Samsung,16,149.99,5
+147,SSD NVMe WD Black 2TB,2,999.99,2
+148,Hub USB-C Anker,7,229.99,3
+149,Smartwatch Galaxy Watch 6,4,1399.99,2
+150,Tableta Lenovo Tab M10,6,899.99,3

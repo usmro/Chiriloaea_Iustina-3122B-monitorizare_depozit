@@ -5,40 +5,33 @@
 #include <iostream>
 
 class Produs {
-
 private:
     int id;
     std::string nume;
     int cantitate;
     double pret;
     int pragAlerta;
+    int furnizorId;
 
 public:
     Produs();
+    Produs(int id, const std::string& nume, int cantitate,
+           double pret, int pragAlerta, int furnizorId = 0);
 
-    Produs(int id,
-            const std::string& nume,
-            int cantitate,
-            double pret,
-            int pragAlerta);
+    int getId()          const { return id; }
+    std::string getNume()const { return nume; }
+    int getCantitate()   const { return cantitate; }
+    double getPret()     const { return pret; }
+    int getPragAlerta()  const { return pragAlerta; }
+    int getFurnizorId()  const { return furnizorId; }
 
-    int getId() const;
-
-    std::string getNume() const;
-
-    int getCantitate() const;
-
-    double getPret() const;
-
-    int getPragAlerta() const;
-
-    void setCantitate(int cantitate);
-
-    void afisare() const;
+    void setCantitate(int c)    { cantitate = c; }
+    void setFurnizorId(int fid) { furnizorId = fid; }
 
     Produs& operator+=(int valoare);
-
     Produs& operator-=(int valoare);
+
+    bool subPrag() const { return cantitate <= pragAlerta; }
 };
 
 #endif
