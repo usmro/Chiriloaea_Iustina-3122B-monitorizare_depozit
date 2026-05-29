@@ -10,6 +10,23 @@
 #include <string>
 #include <iomanip>
 #include <limits>
+#include <ncurses.h>
+void testNcurses() {
+
+    initscr();
+
+    clear();
+
+    mvprintw(5, 10, "NCURSES FUNCTIONEAZA!");
+
+    mvprintw(7, 10, "Apasa orice tasta...");
+
+    refresh();
+
+    getch();
+
+    endwin();
+}
 std::string citesteParola() {
 
     termios vechi, nou;
@@ -367,6 +384,7 @@ void afiseazaIstoric(const Depozit& depozit) {
 }
 
 int main() {
+    
     if (!autentificare()) {
 
     UI::printError("Autentificare esuata!");
@@ -399,41 +417,86 @@ int main() {
         }
         std::cout << Color::RESET;
 
-        switch (optiune) {
-            case 1: adaugaProdus(depozit);        break;
-            case 2:
-                UI::clearScreen();
-                depozit.afiseazaProduse();
-                UI::waitEnter();
-                break;
-            case 3: restock(depozit);             break;
-            case 4: vanzare(depozit);             break;
-            case 5:
-                UI::clearScreen();
-                depozit.genereazaRaportStocMic();
-                UI::waitEnter();
-                break;
-            case 6: gestionareFurnizori(depozit); break;
-            case 7: afiseazaIstoric(depozit);     break;
-            case 8: eliminaProdus(depozit);        break;
-            case 9:
+    switch (optiune) {
 
-                 UI::clearScreen();
+    case 1:
+        UI::clearScreen();
+        adaugaProdus(depozit);
+        break;
 
-                 depozit.genereazaComenziReaprovizionare();
+    case 2:
+        UI::clearScreen();
+        depozit.afiseazaProduse();
+        UI::waitEnter();
+        break;
 
-                 UI::waitEnter();
+    case 3:
+        UI::clearScreen();
+        restock(depozit);
+        break;
 
-                break;
-            case 0:
-                UI::clearScreen();
-                std::cout << Color::BCYAN << Color::BOLD
-                          << "\n  La revedere! 👋\n\n" << Color::RESET;
-                break;
-            default:
-                UI::printError("Optiune invalida! Alege intre 0 si 8.");
-                UI::waitEnter();
-        }
+    case 4:
+        UI::clearScreen();
+        vanzare(depozit);
+        break;
+
+    case 5:
+        UI::clearScreen();
+        depozit.genereazaRaportStocMic();
+        UI::waitEnter();
+        break;
+
+    case 6:
+        UI::clearScreen();
+        gestionareFurnizori(depozit);
+        break;
+
+    case 7:
+        UI::clearScreen();
+
+        UI::printSectionHeader(
+            "ISTORIC TRANZACTII",
+            "📜"
+        );
+
+        depozit.afiseazaIstoricFisier();
+
+        UI::waitEnter();
+        break;
+
+    case 8:
+        UI::clearScreen();
+        eliminaProdus(depozit);
+        break;
+
+    case 9:
+        UI::clearScreen();
+
+        depozit.genereazaComenziReaprovizionare();
+
+        UI::waitEnter();
+        break;
+
+    case 0:
+        UI::clearScreen();
+
+        std::cout
+            << Color::BCYAN
+            << Color::BOLD
+            << "\n  La revedere! 👋\n\n"
+            << Color::RESET;
+
+        break;
+
+    default:
+        UI::clearScreen();
+
+        UI::printError(
+            "Optiune invalida!"
+        );
+
+        UI::waitEnter();
+    }
     } while (optiune != 0);
 
     return 0;

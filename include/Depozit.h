@@ -52,6 +52,10 @@ public:
     Produs produsCelMaiScump() const;
     const std::vector<LogEntry>& getIstoric() const { return istoricTranzactii; }
     int numarProduse() const { return (int)produse.size(); }
+    void salveazaTranzactie(
+    const std::string& linie
+        ) const;
+        void afiseazaIstoricFisier() const;
 };
 
 #endif
