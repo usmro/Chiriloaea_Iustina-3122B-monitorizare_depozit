@@ -40,6 +40,16 @@ void Depozit::aplicaTranzactie(const TranzactieIntrare& t) {
         t.getTip(), t.getProdusId(), t.getCantitate(),
         t.getTimestamp(), t.getObservatii()
     });
+    std::string mesaj =
+    t.getTimestamp()
+    + " | INTRARE | ID="
+    + std::to_string(t.getProdusId())
+    + " | +"
+    + std::to_string(t.getCantitate())
+    + " | "
+    + t.getObservatii();
+
+        salveazaTranzactie(mesaj);
 }
 
 void Depozit::aplicaTranzactie(const TranzactieIesire& t) {
@@ -50,6 +60,16 @@ void Depozit::aplicaTranzactie(const TranzactieIesire& t) {
         t.getTip(), t.getProdusId(), t.getCantitate(),
         t.getTimestamp(), t.getObservatii()
     });
+    std::string mesaj =
+    t.getTimestamp()
+    + " | INTRARE | ID="
+    + std::to_string(t.getProdusId())
+    + " | +"
+    + std::to_string(t.getCantitate())
+    + " | "
+    + t.getObservatii();
+
+salveazaTranzactie(mesaj);
 }
 
 void Depozit::adaugaFurnizor(const Furnizor& furnizor) {
@@ -64,6 +84,7 @@ void Depozit::asociazaFurnizor(int produsId, int furnizorId) {
     if (furnizori.find(furnizorId) == furnizori.end())
         throw FurnizorInexistentException();
     produse[produsId].setFurnizorId(furnizorId);
+    salveazaInFisier("../src/produse.txt");
 }
 
 void Depozit::afiseazaProduse() const {
@@ -137,16 +158,13 @@ void Depozit::afiseazaProduse() const {
                 p->getPragAlerta()
             );
 
-        std::string alertIcon =
-            alert ? " 🚨" : "";
-
         std::cout << "  "
                   << rowColor
                   << std::left
                   << std::setw(6)  << p->getId()
                   << std::setw(32) << p->getNume().substr(0, 30)
                   << std::setw(12)
-                  << (std::to_string(p->getCantitate()) + alertIcon)
+                  << p->getCantitate()
                   << std::setw(15)
                   << UI::formatPret(p->getPret())
                   << std::setw(8)
@@ -170,9 +188,9 @@ void Depozit::afiseazaProduse() const {
     std::cout << Color::RESET << "\n";
 
     std::cout
-        << Color::DIM
-        << "  🚨 = sub pragul de alerta\n"
-        << Color::RESET;
+    << Color::BRED
+    << "  Produsele afisate cu rosu sunt sub pragul de alerta.\n"
+    << Color::RESET;
 }
 
 void Depozit::genereazaRaportStocMic() const {
@@ -215,29 +233,11 @@ std::vector<Produs> Depozit::produseDeReCommandat() const {
         });
     return result;
 }
-void Depozit::salveazaInFisier(const std::string& numeFisier) const {
-
-    std::ofstream fout(numeFisier);
-
-    for (const auto& pereche : produse) {
-
-        const Produs& p = pereche.second;
-
-        fout << p.getId() << ","
-             << p.getNume() << ","
-             << p.getCantitate() << ","
-             << p.getPret() << ","
-             << p.getPragAlerta()
-             << "\n";
-    }
-}
-
 void Depozit::incarcaDinFisier(const std::string& numeFisier) {
 
     std::ifstream fin(numeFisier);
 
     if (!fin.is_open()) {
-
         return;
     }
 
@@ -256,6 +256,7 @@ void Depozit::incarcaDinFisier(const std::string& numeFisier) {
         int cantitate;
         double pret;
         int prag;
+        int furnizorId = 0;
 
         getline(ss, camp, ',');
         id = std::stoi(camp);
@@ -271,7 +272,19 @@ void Depozit::incarcaDinFisier(const std::string& numeFisier) {
         getline(ss, camp, ',');
         prag = std::stoi(camp);
 
-        produse[id] = Produs(id, nume, cantitate, pret, prag);
+        // CITESTE SI FURNIZORUL
+        if (getline(ss, camp, ',')) {
+            furnizorId = std::stoi(camp);
+        }
+
+        produse[id] = Produs(
+            id,
+            nume,
+            cantitate,
+            pret,
+            prag,
+            furnizorId
+        );
     }
 }
 double Depozit::valoareTotalaStoc() const {
@@ -336,10 +349,10 @@ void Depozit::genereazaComenziReaprovizionare() const {
             furnizorPair.second;
 
         std::ofstream fout(
-            "comanda_furnizor_"
-            + std::to_string(furnizorId)
-            + ".txt"
-        );
+    "../comenzi/comanda_furnizor_"
+    + std::to_string(furnizorId)
+    + ".txt"
+);
 
         bool areProduse = false;
 
@@ -393,12 +406,12 @@ void Depozit::genereazaComenziReaprovizionare() const {
             fout.close();
 
             std::remove(
-                (
-                    "comanda_furnizor_"
-                    + std::to_string(furnizorId)
-                    + ".txt"
-                ).c_str()
-            );
+    (
+        "../comenzi/comanda_furnizor_"
+        + std::to_string(furnizorId)
+        + ".txt"
+    ).c_str()
+);
         }
         else {
 
@@ -409,10 +422,10 @@ void Depozit::genereazaComenziReaprovizionare() const {
             fout.close();
 
             UI::printSuccess(
-                "Generata: comanda_furnizor_"
-                + std::to_string(furnizorId)
-                + ".txt"
-            );
+    "Generata in folderul COMENZI: comanda_furnizor_"
+    + std::to_string(furnizorId)
+    + ".txt"
+);
         }
     }
 
@@ -485,5 +498,53 @@ void Depozit::incarcaFurnizori(
                 telefon,
                 email
             );
+    }
+}
+void Depozit::salveazaTranzactie(
+    const std::string& linie
+) const {
+
+    std::ofstream fout(
+        "../src/tranzactii.txt",
+        std::ios::app
+    );
+
+    if (fout.is_open()) {
+
+        fout << linie << "\n";
+    }
+}
+void Depozit::salveazaInFisier(const std::string& numeFisier) const {
+
+    std::ofstream fout(numeFisier);
+
+    for (const auto& pereche : produse) {
+
+        const Produs& p = pereche.second;
+
+        fout << p.getId() << ","
+             << p.getNume() << ","
+             << p.getCantitate() << ","
+             << p.getPret() << ","
+             << p.getPragAlerta() << ","
+             << p.getFurnizorId()
+             << "\n";
+    }
+}
+void Depozit::afiseazaIstoricFisier() const {
+
+    std::ifstream fin("../src/tranzactii.txt");
+
+    if (!fin.is_open()) {
+
+        UI::printWarning("Nu exista fisierul de tranzactii.");
+        return;
+    }
+
+    std::string linie;
+
+    while (std::getline(fin, linie)) {
+
+        std::cout << linie << "\n";
     }
 }
