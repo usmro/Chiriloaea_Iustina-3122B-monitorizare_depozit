@@ -124,6 +124,8 @@ depozit: CMakeFiles/depozit.dir/src/main.cpp.o
 depozit: CMakeFiles/depozit.dir/src/Produs.cpp.o
 depozit: CMakeFiles/depozit.dir/src/Depozit.cpp.o
 depozit: CMakeFiles/depozit.dir/build.make
+depozit: /usr/lib/x86_64-linux-gnu/libcurses.so
+depozit: /usr/lib/x86_64-linux-gnu/libform.so
 depozit: CMakeFiles/depozit.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user/projects/warehouse_monitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable depozit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/depozit.dir/link.txt --verbose=$(VERBOSE)

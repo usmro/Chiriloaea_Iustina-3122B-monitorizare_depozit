@@ -10,6 +10,23 @@
 #include <string>
 #include <iomanip>
 #include <limits>
+#include <ncurses.h>
+void testNcurses() {
+
+    initscr();
+
+    clear();
+
+    mvprintw(5, 10, "NCURSES FUNCTIONEAZA!");
+
+    mvprintw(7, 10, "Apasa orice tasta...");
+
+    refresh();
+
+    getch();
+
+    endwin();
+}
 std::string citesteParola() {
 
     termios vechi, nou;
@@ -367,6 +384,7 @@ void afiseazaIstoric(const Depozit& depozit) {
 }
 
 int main() {
+    
     if (!autentificare()) {
 
     UI::printError("Autentificare esuata!");
